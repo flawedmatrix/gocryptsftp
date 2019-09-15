@@ -67,9 +67,9 @@ nested drive.
 directory to this local gocryptfs drive, and then syncs this gocryptfs drive
 to a remote server.
   - Doing this is relatively efficient compared to the first solution.
-  (On my laptop, with about 20,000 files, it takes about 20 seconds to stat
-  all files. Then syncing to to a remote server with SFTP takes about 40
-  seconds to stat all files).
+  (On my laptop with Intel Core i7-8565U, with about 20,000 files, it takes
+  about 20 seconds to stat all files. Then syncing to to a remote server with
+  SFTP takes about 40 seconds to stat all files).
   - Huge plus in this regard is no longer having to deal with FUSE on Windows.
   - Major disadvantage to this approach is one must have enough storage for
   both the entire gocryptfs drive and the plaintext files that we actually want.
@@ -99,8 +99,9 @@ introduces a simple LRU path lookup cache for frequently accessed paths.
 
 With these simple cache mechanisms in place, Gocrypt SFTP outperforms as well
 as or even better than the second approach described in
-[Motivations](#motivations). On my laptop, with about 20,000 files, it takes
-under 1 minute to stat (in plaintext) all files in the remote gocryptfs drive.
+[Motivations](#motivations). On my laptop with Intel Core i7-8565U, with
+about 20,000 files, it takes under 1 minute to stat (in plaintext) all files
+in the remote gocryptfs drive.
 
 
 

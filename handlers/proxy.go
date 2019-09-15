@@ -9,6 +9,8 @@ import (
 	"github.com/pkg/sftp"
 )
 
+// Not used, just a reference implementation
+
 func ProxyHandler(remoteClient *sftp.Client) sftp.Handlers {
 	h := &proxy{client: remoteClient}
 	return sftp.Handlers{
