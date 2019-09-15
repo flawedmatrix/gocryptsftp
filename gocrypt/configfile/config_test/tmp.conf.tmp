@@ -1,0 +1,20 @@
+{
+	"Creator": "test",
+	"EncryptedKey": "yzcUdnLQsbxey4cBANmeITWQG1fPQUTJNzKPSZrmKzzA/mDNbxwDAkEUoFDcEciDBeoAfaSBh2rGwDTQVYeLbw==",
+	"ScryptObject": {
+		"Salt": "gUsD6H7QKV5Zr4M3sZ9In3QdxK8G7caR8TgdiZuJdjU=",
+		"N": 1024,
+		"R": 8,
+		"P": 1,
+		"KeyLen": 32
+	},
+	"Version": 2,
+	"FeatureFlags": [
+		"GCMIV128",
+		"HKDF",
+		"DirIV",
+		"EMENames",
+		"LongNames",
+		"Raw64"
+	]
+}
